@@ -1,0 +1,5 @@
+site picks random number on page load
+
+user guesses a number
+
+site tells user if guess was too high, too low, or correct
