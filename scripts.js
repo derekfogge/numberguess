@@ -3,7 +3,7 @@ $(document).ready(function() {
   //site picks random number btwn 1 and 10 on page load
   //and stores it in the variable "randomNum"
   function generateNum(min, max) {
-  	return Math.floor(Math.random() * (max - min + 1)) + min;
+    return Math.floor(Math.random() * (max - min + 1)) + min;
   }
   var randomNum = generateNum(1, 10);
 
@@ -12,26 +12,36 @@ $(document).ready(function() {
 
   //this validates the form and checks for a match
   $('form').submit(function() {
-  	var userNum = $('#guessinput').val();
+    var userNum = $('#guessinput').val();
 
-  	if (userNum == randomNum) {
-		  console.log('match');
-		} else if (isNaN(userNum)) {
-		 console.log('not a number');
-		} else if (userNum < randomNum) {
-		 console.log('too low');
-		} else {
-		  console.log('too high');
-		};
+    $('.result p').hide();
 
-  	console.log(userNum);
+    if (userNum == randomNum) {
+      $('#match').toggle();
+      $('form').hide();
+      console.log('match');
+    } else if (isNaN(userNum)) {
+      $('#nan').toggle();
+      console.log('not a number');
+    } else if (userNum > 10 | userNum == 0) {
+      $('#range').toggle();
+      console.log('out of range');
+    } else if (userNum < randomNum) {
+      $('#low').toggle();
+      console.log('too low');
+    } else {
+      $('#high').toggle();
+      console.log('too high');
+    };
 
-  	//this clears the input on submit
-		$('#guessinput').val('');
+    console.log(userNum);
 
-  	return false;
+    //this clears the input on submit
+    $('#guessinput').val('');
 
-	});
+    return false;
+
+  });
 
 
 

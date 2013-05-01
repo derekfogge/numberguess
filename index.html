@@ -5,6 +5,7 @@
 		<meta name="description" content="">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>#Guess</title>
+		<link rel="stylesheet" href="normalize.css">
 		<link rel="stylesheet" href="style.css">
 
 	</head>
@@ -13,17 +14,28 @@
 		<div class="main">
 			<h1>#Guess</h1>
 
-			<p>pick a number between 1 and 10</p>
+
 			<form id="guessform">
+				<p>pick a number between 1 and 10</p>
 				<input type="type" name="guessinput" id="guessinput"  maxlength="2" />
+				<input type="submit" name="guesssubmit" />
 			</form>
+
+			<div class="result">
+				<p id="match" class="winner">YOU GOT A MATCH!</p>
+				<p id="low">TOO LOW! Guess again.</p>
+				<p id="high">TOO HIGH! Guess again.</p>
+				<p id="range">That number wasn't
+					<span class="break"><br></span>between 1 and 10. Try again.</p>
+				<p id="nan">Oh c'mon, that wasn't
+					<span class="break"><br></span>even a number...</p>
+			</div>
 
 
 
 		</div><!-- end main -->
 
-
-		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script src="jquery-1.9.1.min.js"></script>
 		<script src="scripts.js"></script>
 
 	</body>
