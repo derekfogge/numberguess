@@ -1,0 +1,95 @@
+html, body{
+	width:100%;
+	overflow:hidden;
+}
+
+html{
+	background:#222 url('simple_dashed.jpg');
+}
+
+body{
+	margin:160px 0 0;
+	height:100%;
+	box-shadow:0 1px 6px black;
+	background:#7AA000 url('bg.jpg') center center no-repeat fixed;
+	-webkit-background-size: cover;
+ 		 -moz-background-size: cover;
+		   -o-background-size: cover;
+ 					background-size: cover;
+}
+
+.main{
+	height: 340px;
+	margin:-60px auto 20px;
+	text-align: center;
+}
+
+h1{
+	font-family: 'Gillsans', Tahoma, sans-serif;
+	font-weight: bold;
+	font-size: 120px;
+	color:white;
+	-webkit-transition: all 0.2s ease;
+	   -moz-transition: all 0.2s ease;
+	    -ms-transition: all 0.2s ease;
+	     -o-transition: all 0.2s ease;
+	        transition: all 0.2s ease;
+	text-shadow:0px 0px 0 rgb(233,233,233),-1px 1px 0 rgb(215,215,215),-2px 2px 0 rgb(198,198,198),-3px 3px 0 rgb(180,180,180),-4px 4px 0 rgb(162,162,162), -5px 5px 0 rgb(144,144,144),-6px 6px 5px rgba(0,0,0,0),-6px 6px 1px rgba(0,0,0,0.5),0px 0px 5px rgba(0,0,0,.2);
+}
+
+p{
+	color:white;
+	display:block;
+	margin:-40px auto 40px;
+	line-height: 0;
+	font-size: 20px;
+	font-family: 'Futura', Tahoma, sans-serif;
+	font-weight: bold;
+	text-shadow: 0px 1px 1px #222;
+}
+
+p.winner{
+	margin: -36px;
+	font-family: 'Gillsans', Tahoma, sans-serif;
+	font-weight: bold;
+	font-size: 46px;
+	color:white;
+	-webkit-transition: all 0.2s ease;
+	   -moz-transition: all 0.2s ease;
+	    -ms-transition: all 0.2s ease;
+	     -o-transition: all 0.2s ease;
+	        transition: all 0.2s ease;
+	text-shadow:0px 0px 0 rgb(233,233,233),-1px 1px 0 rgb(215,215,215),-2px 2px 0 rgb(198,198,198),-3px 3px 0 rgb(180,180,180),-4px 4px 0 rgb(162,162,162), -5px 5px 0 rgb(144,144,144),-6px 6px 5px rgba(0,0,0,0),-6px 6px 1px rgba(0,0,0,0.5),0px 0px 5px rgba(0,0,0,.2);
+}
+
+form{
+	padding-bottom: 40px;
+}
+
+input{
+	margin-bottom: 40px;
+}
+
+.result p{
+	display:none;
+	line-height:1.2;
+}
+
+.break{
+	display:none;
+}
+
+@media only screen and (max-width : 480px) {
+	body{
+		margin: 80px 0 0;
+	}
+
+	h1{
+		padding-top: 20px;
+		font-size:96px;
+	}
+
+	.break{
+		display:inline;
+	}
+}
