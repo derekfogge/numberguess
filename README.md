@@ -1,4 +1,6 @@
 numberguess
 ===========
 
-number hiding game for Thinkful
+a number hiding game for Thinkful
+
+http://derekfogge.github.io/numberguess/index.html
