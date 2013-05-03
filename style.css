@@ -81,12 +81,9 @@ input{
 
 @media only screen and (max-width : 480px) {
 	body{
-<<<<<<< HEAD
 		margin: 80px 0 0;
-=======
 		height:336px;
 		margin: 20px 0 0;
->>>>>>> 64668d96ab0317fbef8b4b8225f8f9cef9bace99
 	}
 
 	h1{
@@ -97,8 +94,3 @@ input{
 	.break{
 		display:inline;
 	}
-<<<<<<< HEAD
-}
-=======
-}
->>>>>>> 64668d96ab0317fbef8b4b8225f8f9cef9bace99
