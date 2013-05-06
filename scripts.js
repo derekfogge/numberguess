@@ -16,7 +16,11 @@ $(document).ready(function() {
 
     $('.result p').hide();
 
-    if (userNum == randomNum) {
+
+    if ($.trim(userNum) == '' ) {
+      return false;
+    }
+    else if (userNum == randomNum) {
       $('#match').toggle();
       $('form').hide();
       console.log('match');
